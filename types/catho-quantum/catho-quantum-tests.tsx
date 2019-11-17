@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Alert, Button, Icon } from 'catho-quantum';
+import { Alert, Badge, Button, Icon } from 'catho-quantum';
 
 const baseTheme = {
     baseFontSize: 16,
@@ -13,6 +13,13 @@ const alertTheme = {
     components: {
         alert: {},
         button: {},
+    },
+};
+
+const badgeTheme = {
+    ...baseTheme,
+    components: {
+        badge: {},
     },
 };
 
@@ -49,6 +56,23 @@ const alert = (
         <Alert onClose={function a() {}} theme={alertTheme}>
             Themed Alert
         </Alert>
+    </>
+);
+
+const badge = (
+    <>
+        <Badge />
+        <Badge>Badge with children</Badge>
+
+        <Badge skin="primary" />
+        <Badge skin="secondary" />
+        <Badge skin="success" />
+        <Badge skin="error" />
+        <Badge skin="neutral" />
+
+        <Badge number={1} />
+        <Badge inverted />
+        <Badge theme={badgeTheme} />
     </>
 );
 

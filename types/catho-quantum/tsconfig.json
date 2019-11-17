@@ -23,6 +23,7 @@
         "catho-quantum-tests.tsx",
         "lib/index.d.ts",
         "lib/Alert/index.d.ts",
+        "lib/Badge/index.d.ts",
         "lib/Button/index.d.ts",
         "lib/Icon/index.d.ts"
     ]
