@@ -1,16 +1,57 @@
-/// <reference types="../react" />
+import * as React from 'react';
+import { Alert, Button, Icon } from 'catho-quantum';
 
-import { Button } from './index';
-
-const theme = {
+const baseTheme = {
     baseFontSize: 16,
     colors: {},
     spacing: {},
     breakpoints: {},
+};
+
+const alertTheme = {
+    ...baseTheme,
+    components: {
+        alert: {},
+        button: {},
+    },
+};
+
+const buttonTheme = {
+    ...baseTheme,
     components: {
         button: {},
     },
 };
+
+const alert = (
+    <>
+        <Alert onClose={function a() {}}>Default Alert</Alert>
+        <Alert onClose={function a() {}} skin="error">
+            Error Alert
+        </Alert>
+        <Alert onClose={function a() {}} skin="neutral">
+            Neutral Alert
+        </Alert>
+        <Alert onClose={function a() {}} skin="primary">
+            Primary Alert
+        </Alert>
+        <Alert onClose={function a() {}} skin="warning">
+            Warning Alert
+        </Alert>
+        <Alert onClose={function a() {}} skin="success">
+            Success Alert
+        </Alert>
+
+        <Alert onClose={function a() {}} icon="icon-name">
+            Alert with icon
+        </Alert>
+
+        <Alert onClose={function a() {}} theme={alertTheme}>
+            Themed Alert
+        </Alert>
+    </>
+);
+
 const buttons = (
     <>
         <Button>Button</Button>
@@ -39,6 +80,13 @@ const buttons = (
         <Button type="button">Button type button</Button>
         <Button type="reset">Button type reset</Button>
 
-        <Button theme={theme}>Themed Button</Button>
+        <Button theme={buttonTheme}>Themed Button</Button>
+    </>
+);
+
+const icons = (
+    <>
+        <Icon name="icon-name" />
+        <Icon name="icon-name" skin="color" />
     </>
 );

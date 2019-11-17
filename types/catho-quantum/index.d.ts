@@ -3,4 +3,6 @@
 // Definitions by: Tiago Celestino <https://github.com/tcelestino>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
+export { default as Alert } from './lib/Alert/Alert';
 export { default as Button } from './lib/Button/Button';
+export { default as Icon } from './lib/Icon/Icon';
