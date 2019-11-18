@@ -1,9 +1,9 @@
 /// <reference types="../../../react" />
 
-export type ButtonSize = 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge';
-export type ButtonSkin = 'neutral' | 'primary' | 'secondary' | 'success' | 'warning' | 'error';
-export type ButtonType = 'button' | 'reset' | 'submit';
-export type ButtonTheme = {
+type ButtonSize = 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge';
+type ButtonSkin = 'neutral' | 'primary' | 'secondary' | 'success' | 'warning' | 'error';
+type ButtonType = 'button' | 'reset' | 'submit';
+type ButtonTheme = {
     baseFontSize?: number;
     colors?: object;
     spacing?: object;

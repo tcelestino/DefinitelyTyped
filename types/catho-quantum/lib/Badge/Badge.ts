@@ -1,8 +1,8 @@
 /// <reference types="../../../react" />
 
-export type BadgeSkin = 'primary' | 'secondary' | 'success' | 'error' | 'neutral';
+type BadgeSkin = 'primary' | 'secondary' | 'success' | 'error' | 'neutral';
 
-export type BadgeTheme = {
+type BadgeTheme = {
     baseFontSize?: number;
     spacing?: object;
     components?: {

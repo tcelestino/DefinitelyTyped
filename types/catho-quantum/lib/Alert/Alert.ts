@@ -1,8 +1,8 @@
 /// <reference types="../../../react" />
 
-export type AlertSkin = 'primary' | 'success' | 'error' | 'neutral' | 'warning';
+type AlertSkin = 'primary' | 'success' | 'error' | 'neutral' | 'warning';
 
-export type AlertTheme = {
+type AlertTheme = {
     baseFontSize?: number;
     colors?: object;
     spacing?: object;
