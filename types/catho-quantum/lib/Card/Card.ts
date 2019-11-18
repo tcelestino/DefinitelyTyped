@@ -1,14 +1,6 @@
 import * as React from 'react';
 import { StyledComponent } from 'styled-components';
 
-export type CardProps = {
-    theme?: { colors?: object };
-} & { [x: string]: any };
-
-export type HeaderProps = {
-    theme: { spacing?: object };
-} & { [x: string]: any };
-
 interface CardInterface {
     small?: boolean;
     theme?: object;
@@ -55,6 +47,14 @@ type Title<O extends CardTitle> = StyledComponent<'h2', any, O>;
 type Description<O extends CardDescription> = StyledComponent<'div', any, O>;
 type Thumbnail<O extends CardThumbnail> = StyledComponent<'img', any, O>;
 type Media<O extends CardMedia> = StyledComponent<'div', any, O>;
+
+export type CardProps = {
+    theme?: { colors?: object };
+} & { [x: string]: any };
+
+export type HeaderProps = {
+    theme: { spacing?: object };
+} & { [x: string]: any };
 
 export type TitleProps = CardTitle;
 export type DescriptionProps = CardDescription;
