@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Alert, Badge, Button, Icon } from 'catho-quantum';
+import { Alert, Badge, Button, Card, Icon } from 'catho-quantum';
 
 const baseTheme = {
     baseFontSize: 16,
@@ -105,6 +105,55 @@ const buttons = (
         <Button type="reset">Button type reset</Button>
 
         <Button theme={buttonTheme}>Themed Button</Button>
+    </>
+);
+
+const card = (
+    <>
+        <Card>
+            <Card.Header>
+                <Card.HeaderText>
+                    <Card.Title small>Title Card</Card.Title>
+                    <Card.Description small></Card.Description>
+                </Card.HeaderText>
+                <Card.Thumbnail rounded src="#" alt="" />
+            </Card.Header>
+            <Card.Content>
+                Duis ac enim non leo dapibus placerat ut vel ligula. Pellentesque sed metus elit. In hac habitasse
+                platea dictumst. Fusce non purus a dui semper molestie vitae in sapien. In a odio quis nisi placerat
+                varius eget et magna. Donec nec cursus mauris. Donec a cursus velit.
+            </Card.Content>
+            <Card.Footer>
+                <Button size="small">Send</Button>
+            </Card.Footer>
+        </Card>
+
+        <Card>
+            <Card.Header>
+                <Card.Thumbnail src="https://dummyimage.com/72x72" alt="Avatar" />
+                <Card.HeaderText>
+                    <Card.Title small>Title</Card.Title>
+                    <Card.Description>Lorem ipsum dolor sit amet.</Card.Description>
+                </Card.HeaderText>
+            </Card.Header>
+            <Card.Media src="https://dummyimage.com/800x800" alt="A beautiful Cat" />
+            <Card.Content>
+                Duis ac enim non leo dapibus placerat ut vel ligula. Pellentesque sed metus elit. In hac habitasse
+                platea dictumst. Fusce non purus a dui semper molestie vitae in sapien. In a odio quis nisi placerat
+                varius eget et magna. Donec nec cursus mauris. Donec a cursus velit.
+            </Card.Content>
+            <Card.Footer>
+                <div>
+                    <Button size="small" skin="secondary">
+                        See more
+                    </Button>
+                </div>
+                <div>
+                    <Icon name="favorite" />
+                    <Icon name="share" />
+                </div>
+            </Card.Footer>
+        </Card>
     </>
 );
 

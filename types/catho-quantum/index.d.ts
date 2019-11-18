@@ -6,4 +6,5 @@
 export { default as Alert } from './lib/Alert/Alert';
 export { default as Badge } from './lib/Badge/Badge';
 export { default as Button } from './lib/Button/Button';
+export { default as Card } from './lib/Card/Card';
 export { default as Icon } from './lib/Icon/Icon';
