@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyledComponent, StyledComponentInnerComponent } from 'styled-components';
+import { StyledComponent } from 'styled-components';
 
 export type CardProps = {
     theme?: { colors?: object };
