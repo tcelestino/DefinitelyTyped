@@ -1,6 +1,6 @@
 /// <reference types="../../../react" />
 
-type AlertSkin = 'primary' | 'success' | 'error' | 'neutral' | 'warning';
+export type AlertSkin = 'primary' | 'success' | 'error' | 'neutral' | 'warning';
 
 type AlertTheme = {
     baseFontSize?: number;

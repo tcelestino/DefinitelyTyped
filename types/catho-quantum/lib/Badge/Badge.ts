@@ -1,6 +1,6 @@
 /// <reference types="../../../react" />
 
-type BadgeSkin = 'primary' | 'secondary' | 'success' | 'error' | 'neutral';
+export type BadgeSkin = 'primary' | 'secondary' | 'success' | 'error' | 'neutral';
 
 type BadgeTheme = {
     baseFontSize?: number;
