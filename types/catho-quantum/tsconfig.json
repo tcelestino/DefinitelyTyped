@@ -26,6 +26,7 @@
         "lib/Badge/index.d.ts",
         "lib/Button/index.d.ts",
         "lib/Card/index.d.ts",
+        "lib/Checkbox/index.d.ts",
         "lib/Icon/index.d.ts"
     ]
 }

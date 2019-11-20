@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Alert, Badge, Button, Card, Icon } from 'catho-quantum';
+import { Alert, Badge, Button, Card, Checkbox, CheckboxButton, CheckboxGroup, Icon } from 'catho-quantum';
 
 const baseTheme = {
     baseFontSize: 16,
@@ -29,6 +29,37 @@ const buttonTheme = {
         button: {},
     },
 };
+
+const checkboxTheme = {
+    ...baseTheme,
+};
+
+const checkboxGroupOptions = [
+    {
+        label: 'Banana',
+        name: 'banana',
+    },
+    {
+        label: 'Orange',
+        name: 'orange',
+        checked: true,
+    },
+    {
+        label: 'Lemon',
+        name: 'lemon',
+        checked: true,
+        disabled: true,
+    },
+    {
+        label: 'Strawberry',
+        name: 'strawberry',
+        disabled: true,
+    },
+    {
+        label: 'Blueberry',
+        name: 'blueberry',
+    },
+];
 
 const alert = (
     <>
@@ -154,6 +185,49 @@ const card = (
                 </div>
             </Card.Footer>
         </Card>
+    </>
+);
+
+const checkboxs = (
+    <>
+        <Checkbox name="checkbox-name" />
+        <Checkbox name="checkbox-name" onChange={function() {}} />
+        <Checkbox name="checkbox-name" checked />
+        <Checkbox name="checkbox-name" disabled />
+        <Checkbox name="checkbox-name" error="error" />
+        <Checkbox name="checkbox-name" id="id" />
+        <Checkbox name="checkbox-name" label="label" />
+        <Checkbox name="checkbox-name" value="value" />
+        <Checkbox name="checkbox-name" theme={checkboxTheme} />
+
+        <CheckboxButton name="checkboxbutton" />
+        <CheckboxButton name="checkboxbutton" onChange={function() {}} />
+        <CheckboxButton name="checkboxbutton" checked />
+        <CheckboxButton name="checkboxbutton" disabled />
+        <CheckboxButton name="checkboxbutton" error="error" />
+        <CheckboxButton name="checkboxbutton" id="id" />
+        <CheckboxButton name="checkboxbutton" label="label" />
+        <CheckboxButton name="checkboxbutton" value="value" />
+        <CheckboxButton name="checkboxbutton" skin="primary" />
+
+        <CheckboxGroup options={checkboxGroupOptions} />
+
+        <CheckboxGroup>
+            <CheckboxButton name="checkboxbutton" value="with-icon" icon="thumb_up">
+                With an Icon
+            </CheckboxButton>
+            <CheckboxButton name="checkboxbutton" value="default">
+                Default
+            </CheckboxButton>
+        </CheckboxGroup>
+
+        <CheckboxGroup>
+            <Checkbox label="Banana" name="banana" />
+            <Checkbox label="Orange" name="orange" checked />
+            <Checkbox label="Lemon" name="lemon" checked disabled />
+            <Checkbox label="Strawberry" name="strawberry" disabled />
+            <Checkbox label="Blueberry" name="blueberry" />
+        </CheckboxGroup>
     </>
 );
 
